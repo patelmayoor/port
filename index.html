@@ -13,6 +13,47 @@
         <title>Portfolio Website</title>
     </head>
     <style>
+        @media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-img img {
+        width: 70%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .videos .video-container video {
+        width: 90%;
+    }
+
+    .service-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
     .event-trailer .video-container video {
         width: 80%;
         max-width: 1000px;
