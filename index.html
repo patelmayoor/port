@@ -13,47 +13,6 @@
         <title>Portfolio Website</title>
     </head>
     <style>
-        @media (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .home-img img {
-        width: 70%;
-        max-width: 300px;
-        margin-bottom: 20px;
-    }
-
-    .videos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .videos .video-container video {
-        width: 90%;
-    }
-
-    .service-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-item {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
     .event-trailer .video-container video {
         width: 80%;
         max-width: 1000px;
@@ -75,7 +34,7 @@
 
         <!-- Header -->
         <header>
-            <a href="#" class="logo">Alex</a>
+            <a href="#" class="logo">Mayoor Patel</a>
             <nav>
         <a href="index.html" class="active">Home</a>
         <a href="#services">Services</a>
@@ -90,20 +49,17 @@
         <!-- Home Section -->
         <section class="home">
             <div class="home-img">
-                <img src="aa.png" alt="Profile Image"/>
+                <img src="mady.jpeg" alt="Profile Image"/>
             </div>
             <div class="home-content">
-                <h1>Hi, It's <span>Mady</span></h1>
+                <h1>Hi, I'm <span>Mayoor Patel</span></h1>
                 <h3 class="typing-text">I'm a <span></span></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+                <p>With a passion for storytelling through visuals, I specialize in crafting impactful videos that engage, inspire, and deliver results. From cinematic edits and motion graphics to corporate promos and social media content, I transform raw footage into compelling visual experiences.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-github"></i></a>
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/mady.feels?utm_source=ig_web_button_share_sheet&igsh=MmFlcmRydnp2cGdv" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-</a>
-
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <a href="#" class="btn">Hire me</a>
             </div>
@@ -165,29 +121,44 @@
             </div>
         </section>
 
-        <!-- Event Trailer Section -->
-        <section class="event-trailer">
-            <h2>Event Trailer</h2>
-            <div class="videos">
-                <div class="video-container">
-                    <video controls>
-                        <source src="wedding teaser.mp4" type="video/mp4" />
-                    </video>
-                </div>
-            </div>
-        </section>
+        <!-- Event Trailer & Wedding Video Section Side-by-Side -->
+<section class="clients two-column-section">
+    <h2>Event & Wedding Videos</h2>
+    <div class="video-row">
+        <div class="video-box">
+            <h3>Event Trailer</h3>
+            <video controls>
+                <source src="wedding teaser.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="video-box">
+            <h3>Wedding Video</h3>
+            <video controls>
+                <source src="wedding1.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+</section>
+<!-- Website Promotion Videos Section -->
+<section class="clients two-column-section">
+    <h2>Website Promotion Videos</h2>
+    <div class="video-row">
+        <div class="video-box">
+            <h3>Promo Video 1</h3>
+            <video controls>
+                <source src="promo1.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="video-box">
+            <h3>Promo Video 2</h3>
+            <video controls>
+                <source src="promo2.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+</section>
 
-        <!-- Wedding Video Section -->
-        <section class="clients wedding-video">
-            <h2>Wedding Video</h2>
-            <div class="videos">
-                <div class="video-container">
-                    <video controls>
-                        <source src="Wedding1.mp4" type="video/mp4" />
-                    </video>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Contact Section -->
         <section class="contact">
@@ -209,6 +180,7 @@
             </form>
         </section>
         <script>
+            
     const texts = ["Video Editor", "Motion Graphic Designer", "Visual Story Teller"];
     let count = 0;
     const typingSpan = document.querySelector('.typing-text span');

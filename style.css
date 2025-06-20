@@ -30,9 +30,9 @@ header {
 }
 
 .logo {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #ffffff;
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -83,6 +83,7 @@ h2 {
 
 /* Home Section - Larger */
 .home {
+    size: 3;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -100,7 +101,7 @@ h2 {
     position: absolute;
     width: 1000px;
     height: 1000px;
-    background: radial-gradient(circle, rgba(255, 180, 0, 0.2) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 238, 255, 0.2) 0%, transparent 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -119,13 +120,13 @@ h2 {
 }
 
 .home-img img {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #ffb400;
+    border: 6px solid #ffffff;
     transition: transform 0.4s ease;
-    box-shadow: 0 12px 24px rgba(255, 180, 0, 0.5);
+    box-shadow: 0 12px 24px rgba(0, 213, 255, 0.5);
 }
 
 .home-img img:hover {
@@ -245,7 +246,7 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(255, 180, 0, 0.3);
     transition: transform 0.4s ease;
-    max-width: 400px;
+    max-width: 250px;
     margin: auto;
 }
 
@@ -346,4 +347,57 @@ h2 {
 @keyframes blink {
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
+}
+/* Two Column Video Sections */
+.two-column-section .video-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video-box {
+    flex: 1 1 400px;
+    max-width: 480px;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(255, 180, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.video-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #ffb400;
+}
+
+.video-box video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-box:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .two-column-section .video-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-box {
+        width: 90%;
+    }
+}
+/* Ensure Event & Wedding videos are same size */
+.video-box video {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border-radius: 10px;
 }
