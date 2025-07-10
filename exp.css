@@ -1,0 +1,131 @@
+/* Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ffffff;
+    background-image: radial-gradient(circle at center, rgba(0, 238, 255, 0.08) 0%, transparent 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #0e0e0e;
+    box-shadow: 0 0 10px #00eaff33;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #00eaff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00eaff;
+    border-bottom: 2px solid #00eaff;
+}
+
+/* Page Section */
+.page-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.page-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #00eaff;
+}
+
+/* Timeline Layout */
+.timeline {
+    position: relative;
+    border-left: 4px solid #00eaff55;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: left;
+}
+
+.timeline-item .icon {
+    position: absolute;
+    left: -43px;
+    top: 5px;
+    background-color: #00eaff;
+    color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.timeline-item .content {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 238, 255, 0.2);
+    box-shadow: 0 0 12px rgba(0, 238, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+.timeline-item .content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #00eaff;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 5px 0 10px;
+    display: inline-block;
+}
+
+.timeline-item p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
