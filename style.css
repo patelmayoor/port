@@ -407,3 +407,81 @@
         border-radius: 10px;
         box-shadow: 0 6px 12px rgba(255, 180, 0, 0.3);
     }
+ .showreell video {
+        width: 100%;
+        height: 500px; /* Adjust height as needed */
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(255, 180, 0, 0.3);
+    }
+    .two-column-section .video-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.video-box {
+    width: 45%;
+}
+
+.video-box h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.short-videos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Fix Shortform Showreel video size */
+.shortform-showreel .video-container {
+    max-width: 900px;   /* increase container width */
+    width: 100%;
+}
+
+.shortform-showreel .video-container video {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16/9; /* perfect for 1920x1080 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.contact-email{
+    text-align:center;
+    margin-top:30px;
+}
+
+.email-btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#ffb400;
+    color:#000;
+    font-weight:600;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.email-btn i{
+    margin-right:8px;
+}
+
+.email-btn:hover{
+    background:#e6a200;
+    transform:scale(1.05);
+}
+
+.email-text{
+    margin-top:12px;
+    color:#ccc;
+    font-size:14px;
+}
